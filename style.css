@@ -1,0 +1,980 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fef8ee;
+}
+
+header{
+    height: 75px;
+    background-color: #e5c486;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+@font-face {
+    font-family:titulo;
+    src: url(./Shrikhand/Shrikhand-Regular.ttf);
+}
+
+header .logotipo{
+    height: 75px;
+    width: 75px;
+}
+
+i:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+ .header{
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0;
+} 
+
+ .button-modoTema{
+    width: 75px;
+    height: 75px;
+ }
+ .informations{
+    margin-top: 5%;
+ }
+
+ #modoTema{
+    color: #311800;
+    border-radius: 50px;
+    border: #d3ad66 solid 2px;
+    height: 30px;
+    width: 55px;
+    margin-top: 20px;
+    display: flex;
+    background-color: #fef2db;
+ }
+
+ #modoTema i{
+    margin-left: 5px;
+    height: 20px;
+    margin-top: 2px;
+    font-size: 20px;
+    margin-right: 5px;
+ }
+
+ #modoTema .fa-sun{
+  color:  #fef2db;
+ }
+
+ #modoTema .fa-moon{
+    color: #311800;
+ }
+
+header h2{
+    font-family: titulo;
+    font-size: 1.5rem;
+    color: #311800 ;
+    margin-top: 20px;
+}
+nav ul {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    margin-right: 0;
+    justify-content: end;
+}
+
+nav ul li{
+  
+    margin: 0 30px;
+    margin-top: 20px;
+}
+
+nav ul li a{
+    color: #754b24;
+    text-decoration: none;
+    font-family: titulo;
+    font-size: 17px;
+}
+nav ul li a:hover{
+    color: #8e5e32;
+    font-family: titulo;
+    font-size: 18px;
+}
+
+
+
+h1{
+    font-family: titulo;
+    color: #754b24;
+    /* text-shadow: 0px 2px 15px #333; */
+    font-size: 2.7rem;
+    text-align: center;
+ }
+
+.home2{
+    width: 20%;
+    height: 50%;
+    display: block;
+    left: 0;
+    margin-top: 200px;
+    margin-left: 180px;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.information1{
+    background-color: #754b24;
+    width: 50%;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 15%;
+    border-bottom: solid 4px #352507;
+    border-left: solid 4px #352507 ;
+    box-shadow: #311800 0px 4px 6px;   
+}
+
+.information1 p::selection{
+    background-color: #885b30;
+    color: #2c1806;
+    border-radius: 10px;
+}
+
+.information1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color:  #754b24;
+}
+
+.information11{
+    margin-bottom: 5%;
+    height: 30%;
+}
+.information12{
+    margin-bottom: 3%;
+    height: 30%;
+}
+ 
+.informations{
+    display: block;
+    width: 75%;
+    height: 100%;
+    margin-left: 0;
+}
+
+.cachorrocadeirante{
+    margin-right: 5%;  
+    width: 50%;
+}
+
+#information{
+    display: flex;
+    align-items: center;
+    height: 170vh;
+}
+
+
+#information .information1 p{
+    font-family:sans-serif;
+    margin: 25px;
+    margin-top: 5%;
+    text-align: justify;
+    color: #e5c486;
+}
+/* -----------paralax ----------------*/
+.paralax1{
+    background-image:url(https://caesegatos.com.br/wp-content/uploads/2021/02/cadeira.jpg) ;
+}
+
+.paralax2{
+    background-image:url(https://caesegatos.com.br/wp-content/uploads/2021/02/cadeira.jpg) ;
+}
+.paralax3{
+    background-image:url(https://caesegatos.com.br/wp-content/uploads/2021/02/cadeira.jpg) ;
+}
+
+.paralax4{
+    background-image:url(https://caesegatos.com.br/wp-content/uploads/2021/02/cadeira.jpg) ;
+}
+
+
+.paralax{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*---------------accordion-----------*/
+.accordion{
+    max-width: 300px;
+    margin: auto;
+    position: relative;
+    box-shadow: 1px 0px 1.2px 0px #000000;
+}
+
+.accordion input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: 0;
+}
+
+.accordion h4{
+    background:#432609;
+    color: white;
+    font-size: 1em;
+    padding: 0.8em 1em;
+    position: relative;
+    transition: 0.5s;
+}
+.accordion h4:hover{
+    background-color: #554018;
+}
+.accordion label::before{
+   content:"";
+   display: inline-block;
+   border: 8px solid transparent;
+   border-left: 12px solid white;
+}
+
+.accordion label{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    padding: 0.8em 1em;
+    background: #432609;
+    transition: 0.5s
+}
+
+.accordion .textoaccordion{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    background-color: white;
+    box-shadow:  0 0 10px 0 #c47b32;
+}
+
+.accordion .textoaccordion p{
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+}
+
+.accordion input:checked ~ .textoaccordion{
+    max-height: 200px;
+    overflow-y: scroll;
+    scrollbar-color: #c47b32;
+}
+
+.accordion input:checked ~ h4 label::before{
+    border-left:  8px solid transparent;
+    border-top:  12px solid white;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.textoaccordion p a{
+    color: #c47b32;
+    text-decoration: none;
+}
+
+
+
+
+/* ------------------Gabriel----------------- */
+.carrossel{
+    width: 80%;
+    max-width: 300px;
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #ffffff;
+    object-fit: cover;
+}
+
+.imagens{
+    display: flex;   
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagens img{
+    width: 100%;
+
+} 
+
+.tudo{
+    display: flex;
+    margin: 200px;
+    gap: 300px;
+}
+
+.texto{
+    padding: 7px;
+    gap: 4px;
+    margin: 50px;
+    font-size: 1.7rem;
+}
+
+.column{
+    background-color: #33333396;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin-right: 300px;
+}
+
+.main-content{
+    display: flex;
+    justify-content:baseline ;
+    margin: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.ongs23 , .onges234{
+    display: block;
+    width: 45%;
+    height: 45%;
+    margin-left: 0;
+    /* background-color: #754b24; */
+}
+
+#ongs .ongs23{
+    font-family:sans-serif;
+    margin: 25px;
+    margin-top: 5%;
+    text-align: justify;
+    color: #e5c486;
+    padding: 10px;
+    display: block;
+}
+#ongs123{
+    display: flex; 
+    align-items: center;
+  justify-content: center;
+}
+
+#ongs{
+    height: 80vh;
+}
+
+#ongs .onges234{
+    font-family:sans-serif;
+    margin: 25px;
+    margin-top: 5%;
+    text-align: justify;
+    color: #e5c486;
+}
+
+.ong1{
+    background-color: #754b24;
+    height: 40%;
+    width: 70%;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 15%;
+}
+.ong2{
+    background-color: #754b24;
+    height: 40%;
+    width: 70%;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 15%;
+}
+.ong3{
+    background-color: #754b24;
+    height: 40%;
+    width: 70%;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 15%;
+}
+.ong4{
+    background-color: #754b24;
+    height: 40%;
+    width: 70%;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 15%;
+}
+
+.ong1{
+    margin-bottom: 3%;
+}
+
+.ong3{
+    margin-bottom: 3%;
+}
+.ong{
+    border-bottom: solid 4px #352507;
+    border-left: solid 4px #352507 ;
+    box-shadow: #311800 0px 4px 6px;  
+}
+.ong p{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 3%;
+    margin: 20px;
+    font-family:sans-serif;
+}
+
+.ong p a{
+    color: #e5c486;
+    text-decoration: none;
+    font-family: titulo;
+    font-size: 18px;
+}
+
+.ong p a:hover{
+    color: #b68457 ;
+}
+
+.ong p::selection{
+    background-color: #885b30;
+    color: #2c1806;
+    border-radius: 15px;
+}
+#ongs h2{
+    font-family: titulo;
+    font-size: 2.5rem;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#ongs h2:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: #b68457 ;
+}
+.ong:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color:  #754b24;
+}
+
+.adopt11{
+    margin-top: 50px;
+    margin-left: 50px;
+
+
+}
+
+.adopt12{
+    margin-top: 50px;
+}
+
+.adopt14{
+    margin-top: 50px;
+} 
+.adopt15{
+    margin-top: 50px;
+} 
+
+.adocao1 .adocao2{
+    padding: 0;
+    height: 100%;
+    width: 100%;
+} 
+
+.adocao2{
+    margin-left: 0;
+}
+
+ .adopt1 img{
+    width: 300px;
+    height: 164px;
+    padding: 5px;
+    border-radius: 35px;
+} 
+
+.adocao1{
+    margin-left: 0;
+}
+
+.adoption{
+    display: flex;
+
+}
+
+
+.foto-nos img{
+    width: 300px;
+    height: 164px;
+    border-radius: 25px;
+}
+
+.foto-nos2 img{
+    width: 300px;
+    height: 164px;
+    border-radius: 25px;
+}
+
+.sobre-nos{
+    display: flex;
+}
+
+
+
+
+
+
+/* -----------------Nalanda-------------------- */
+
+.cta-button{
+    margin-top: 30px;
+    background-color: #f6bb8b;
+    color: #000000;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10%;
+    box-shadow: 0px 4px 6px rgba(237, 222, 159, 0.455);
+    transition:background-color 1s ease,transform 1s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #6d441e;
+}
+
+.cta-button:hover{
+    background-color: #e5c486;
+    transform: scale(1.1);
+}
+
+
+
+.sobrenos nav{
+    list-style-type: none;
+    text-align: left;
+    display: block;
+}
+.sobrenos nav ul{
+    display: block;
+}
+.sobrenos nav ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.sobrenos nav ul li a{
+    color: #754b24;
+}
+footer{
+    background-color: #e5c486;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: solid #c7a462;
+    box-shadow: 0px 4px 6px #edde9f74; 
+    display: flex;
+    }
+
+    .conte-footer{
+        text-align: left;
+        padding-top: 2%;
+        margin-left: 2%;
+
+    }
+
+    .titulofooter{
+        text-align: left;
+        padding-top: 5%;
+        margin-left: 5%;
+
+    }
+
+    h3{
+        font-size: 2.5rem;
+        font-family: titulo;
+        color:  #311800;
+    }
+
+    .titulofooter p{
+        font-size: 14px;
+        margin-top: 0;
+        font-family: titulo;
+        color:#754b24
+
+    }
+   
+    
+    .contatos{
+        text-align: left; 
+         margin-left: 5%; 
+        font-family: titulo;
+        color: #754b24;
+        margin-top: 5%; 
+    }
+
+    .contatos ul li{
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .sumario{
+        padding-top: 9%;
+        margin-left: 7%;
+        flex-direction: column;
+    } 
+     .sumario ul {
+        display: block;
+    }
+
+    .sumario ul li{
+       list-style-type: none;
+       font-size: 16px;
+       text-align: left;
+       margin-left: 5%; 
+       margin: 5%;
+    }
+
+    .sumario ul li a{
+        font-family: titulo;
+        color: #754b24;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .sumario ul li a:hover{
+        color: #97673a ;
+        font-size: 17px;
+    }
+
+  
+    i{
+     
+        font-size: 40px;
+        margin-right: 5%;
+    }
+
+
+
+
+
+
+
+/* --------------------Dark Theme-------------- */
+
+.dark-theme{
+    background-color: #301903;
+}
+.dark-theme header{
+    background-color:  #6f5d3c ;
+}
+
+.dark-theme h1{
+    color:  #9b8358;
+}
+
+.dark-theme nav ul li a{
+    color: #c0a677;
+}
+
+.dark-theme h2{
+    color: #020100;
+}
+
+.dark-theme .information1{
+    background-color: #392008;
+    border-bottom: solid 4px  #4e2a08;
+    border-left: solid 4px #4e2a08 ;
+    box-shadow: #4e2a08 0px 4px 6px;
+}
+.dark-theme #modoTema{
+    background-color: #311b04;
+    border: #160b01 2px solid;
+}
+.dark-theme .fa-sun{
+    color: #a27e1a;
+ }
+
+ .dark-theme .fa-moon{
+    color:  #432609;
+}
+
+.dark-theme footer{
+    background-color: #c9a96d;
+}
+
+.dark-theme .ong{
+    background-color: #392008;
+    color: #dfc28e;
+    border-bottom: solid 4px #4e2a08;
+    border-left: solid 4px #4e2a08 ;
+    box-shadow:#4e2a08 0px 4px 6px;
+}
+.dark-theme .ong p a{ 
+    color:  #dfc28e;
+}
+
+.dark-theme .cta-button{
+    background-color:#b79d6e; ;
+    color: #000000;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 6px rgba(237, 222, 159, 0.455);
+    transition:background-color 1s ease,transform 1s ease;
+    color:#534827;
+}
+
+.dark-theme #information .information1 p{
+    color:  #dfc28e;
+}
+
+
+
+
+/* ---------------------Responsivo---------- */
+@media screen and (max-width: 320px) {
+    body{
+        background-color: #f9d99f;
+    }
+    header{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        top: 0;
+    }
+    
+    header .logotipo{
+        height: 55px;
+        width: 55px;
+    }
+    
+    header h2{
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+
+    .tudo{
+        display: block;
+        margin: 20px;
+        gap: 30px;
+    }
+    
+    .texto{
+        padding: 5px;
+        gap: 4px;
+        margin: 40px;
+        margin-left: 18%;
+        font-size: 1.5rem;
+        align-items: center;
+    }
+
+    h1{
+        margin-top: 35px;
+        font-size: 2.1rem;
+    }
+    .cta-button{
+        margin-top: 25px;
+        padding: 15px 30px;
+        font-size: 17px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition:background-color 1s ease,transform 1s ease;
+        margin-left: 10%;}
+
+
+        .carrossel{
+            width: 75%;
+            max-width: 300px;
+            overflow: hidden; 
+            border-radius: 15px;
+            box-shadow: 0 4px 6px #ffffff;
+            margin-left: 2%;
+            object-fit: cover;
+        }
+        
+    }
+    
+    
+
+@media screen and (max-width: 390px) {
+
+    body{
+        background-color: #f9d99f;
+    }
+    header{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        top: 0;
+    }
+
+    header .logotipo{
+        height: 60px;
+        width: 60px;
+    }
+    
+    header h2{
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+    
+    header nav ul{
+        display: none;
+    }
+
+    
+.tudo{
+    display: block;
+    margin: 20px;
+    gap: 30px;
+}
+
+.texto{
+    padding: 5px;
+    gap: 4px;
+    margin: 40px;
+    margin-left: 18%;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+h1{
+    margin-top: 35px;
+    font-size: 2.1rem;
+}
+
+.cta-button{
+    margin-top: 25px;
+    padding: 15px 30px;
+    font-size: 17px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition:background-color 1s ease,transform 1s ease;
+    margin-left: 18%;
+}
+.carrossel{
+    width: 80%;
+    max-width: 300px;
+    overflow: hidden; 
+    border-radius: 15px;
+    box-shadow: 0 4px 6px #ffffff;
+    margin-left: 12% ;
+    transform: translate(5%, 0%);
+}
+
+
+.imagens{
+    display: flex;   
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagens img{
+    width: 100%;
+} 
+
+#information{
+    display: block;
+    align-items: center;
+    height: 120vh;
+}
+
+section{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+
+.information1{
+    background-color: #754b24;
+    height: 40%;
+    width: 95%;
+    border-radius: 20px;
+    align-items: center;
+    margin: 18%;
+}
+.information11{
+    margin-bottom: 2%;
+}
+.information12{
+    margin-bottom: 0;
+}
+.sla6{
+    width: 80%;
+    margin-top:0;
+    margin-left: 8%;
+}
+.sla6 img{
+    width: 100%;
+}
+
+#ongs{
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+    margin-top:120% ;
+}
+
+.ong{
+    width: 80%;
+}
+
+.sla7 , .sla8{
+    width: 100%;
+    height: 30%;
+}
+.ong1 , .ong2 , .ong3 , .ong4{
+    background-color: #754b24;
+    height: 40%;
+    width: 75%;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 8%;
+}
+
+.ong p{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 0;
+
+}
+
+.ong p a{
+    color: #e5c486;
+    text-decoration: none;
+    font-family: titulo;
+    font-size: 18px;
+}   
+
+.paralax{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+}
